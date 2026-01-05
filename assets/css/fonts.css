@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Haas bold";
+  font-weight: normal;
+  font-style: bold;
+  font-display: auto;
+  src: url("../fonts/AlteHaasGroteskBold.woff") format("woff"), url("../fonts/AlteHaasGroteskBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Haas regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/AlteHaasGroteskRegular.woff") format("woff"), url("../fonts/AlteHaasGroteskRegular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Times bold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Times NR Seven MT Std Bold.woff") format("woff"), url("../fonts/Times NR Seven MT Std Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Times italic";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Times NR Seven MT Std Italic.woff") format("woff"), url("../fonts/Times NR Seven MT Std Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Times regular";
+  font-weight: normal;
+  font-style: bold;
+  font-display: auto;
+  src: url("../fonts/Times NR Seven MT Std Regular.woff") format("woff"), url("../fonts/Times NR Seven MT Std Regular.woff2") format("woff2");
+}

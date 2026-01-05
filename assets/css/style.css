@@ -67,6 +67,47 @@ body {
   font-family: "times";
 }
 
+.fixed-top-right a {
+  all: unset;
+  cursor: pointer;
+  font-family: "times"; 
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2.5px;
+  color: white;
+}
+
+.fixed-top-right a:hover {
+  text-decoration: underline;
+}
+
+.about-close {
+  all: unset;
+  cursor: pointer;
+  font-size: 24px;
+  color: black;
+}
+
+
+.fixed-top-right {
+  position: fixed;
+  padding: 3.5px;
+  right: 7px;
+
+  font-family: "times";
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2.5px;
+  color: white;
+
+  z-index: 9999;
+}
+
+.fixed-top-right:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
 .top-image {
   grid-column: 1 / 9;
   width: 100%;
@@ -189,4 +230,43 @@ body {
   line-height: 1;
   border-radius: 2px;
   cursor: pointer;
+}
+
+/* Default modal off-screen */
+.about-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  font-family: "times";
+  background: black;
+  color: white;
+  z-index: 2000;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  display: grid;
+  place-items: start stretch;
+}
+
+/* Panel styling */
+.about-panel {
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+  background: black;
+}
+
+/* Background overlay for closing */
+.about-modal-background {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Checkbox toggles modal */
+#about-toggle:checked ~ .about-modal {
+  transform: translateX(0);
 }

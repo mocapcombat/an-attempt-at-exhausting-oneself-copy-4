@@ -4,12 +4,36 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>GD3 Starterkit</title>
+  <title>Excerpts Of A Few Months</title>
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/fonts.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
+<!-- Hidden checkbox to control the modal -->
+<input type="checkbox" id="about-toggle" hidden>
+
+<div class="fixed-top-right">
+  <label for="about-toggle">ABOUT</label>
+</div>
+
+<!-- ABOUT MODAL -->
+<div class="about-modal">
+  <div class="about-panel">
+    <h2>About</h2>
+    <p>
+      This website showcases moments captured in everyday life, each with its own story and memories. 
+      Click on the images or details to explore descriptions.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum imperdiet, nulla ut venenatis feugiat, nisi dolor tincidunt risus, vel sodales magna elit eget augue.
+    </p>
+  </div>
+  <!-- Clicking outside closes modal -->
+  <label for="about-toggle" class="about-modal-background"></label>
+</div>
+
 
   <!-- //picture one -->
 

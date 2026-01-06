@@ -9,12 +9,16 @@ body {
 }
 
 .replaced {
+display: grid;
+grid-template-columns: repeat(11, 1fr);
  padding: 21px;
  background-color: rgb(253, 247, 239);
  height: 100vw;
+ grid-auto-rows: min-content;
 }
 
 .replaced-info {
+  grid-column: 3 / 10;
   font-family: "Times bold";
   font-size: 12px;
   line-height: 21px;
@@ -23,14 +27,17 @@ body {
 }
 
 .replaced-text {
+  grid-column: 4 / 9;
   font-family: "Times";
   font-size: 12px;
   line-height: 14px;
   text-align: center;
   letter-spacing: 0px;
+  margin-bottom: 21px;
 }
 
 .replaced-italic {
+  grid-column: 4 / 9;
   font-family: "Times italic";
   font-size: 9px;
   line-height: 17px;
@@ -215,7 +222,6 @@ body {
   display: none;
 }
 
-/* Default modal off-screen */
 .about-modal {
   position: fixed;
   top: 0;
@@ -233,7 +239,6 @@ body {
   place-items: start stretch;
 }
 
-/* Panel styling */
 .about-panel {
   padding: 20px;
   z-index: 2;
@@ -241,7 +246,6 @@ body {
   background: black;
 }
 
-/* Background overlay for closing */
 .about-modal-background {
   position: absolute;
   inset: 0;
@@ -249,7 +253,6 @@ body {
   cursor: pointer;
 }
 
-/* Checkbox toggles modal */
 #about-toggle:checked ~ .about-modal {
   transform: translateX(0);
 }

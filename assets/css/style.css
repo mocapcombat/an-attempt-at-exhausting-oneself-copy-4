@@ -12,7 +12,6 @@ body {
 display: grid;
 grid-template-columns: repeat(11, 1fr);
  padding: 21px;
- background-color: rgb(253, 247, 239);
  height: 100vw;
  grid-auto-rows: min-content;
 }
